@@ -1687,8 +1687,8 @@
 				DYLIB_CURRENT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"/opt/local/libexec/qt5-mac/lib",
-					"/opt/local/libexec/qt5-mac/lib",
+					"/opt/local/libexec/qt5/lib",
+					"/opt/local/libexec/qt5/lib",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1701,14 +1701,14 @@
 				HEADER_SEARCH_PATHS = (
 					jeeps,
 					mac/libusb,
-					"/opt/local/libexex/qt5-mac/lib/QtCore.framework/Versions/5/Headers",
+					"/opt/local/libexex/qt5/lib/QtCore.framework/Versions/5/Headers",
 					.,
-					"/opt/local/libexec/qt5-mac/mkspecs/macx-clang",
+					"/opt/local/libexec/qt5/mkspecs/macx-clang",
 				);
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
 				LIBRARY_SEARCH_PATHS = (
 					/System/Library/Frameworks/,
-					"/opt/local/libexec/qt5-mac/lib/",
+					"/opt/local/libexec/qt5/lib/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
@@ -1755,7 +1755,7 @@
 				);
 				OTHER_LDFLAGS = (
 					"-headerpad_max_install_names",
-					"-F/opt/local/libexec/qt5-mac/lib",
+					"-F/opt/local/libexec/qt5/lib",
 				);
 				PRODUCT_NAME = GPSBabel;
 				QT_LIBRARY_SUFFIX = "";
@@ -1780,8 +1780,8 @@
 				DYLIB_CURRENT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"/opt/local/libexec/qt5-mac/lib",
-					"/opt/local/libexec/qt5-mac/lib",
+					"/opt/local/libexec/qt5/lib",
+					"/opt/local/libexec/qt5/lib",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1795,14 +1795,14 @@
 				HEADER_SEARCH_PATHS = (
 					jeeps,
 					mac/libusb,
-					"/opt/local/libexex/qt5-mac/lib/QtCore.framework/Versions/5/Headers",
+					"/opt/local/libexex/qt5/lib/QtCore.framework/Versions/5/Headers",
 					.,
-					"/opt/local/libexec/qt5-mac/mkspecs/macx-clang",
+					"/opt/local/libexec/qt5/mkspecs/macx-clang",
 				);
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
 				LIBRARY_SEARCH_PATHS = (
 					/System/Library/Frameworks/,
-					"/opt/local/libexec/qt5-mac/lib/",
+					"/opt/local/libexec/qt5/lib/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1850,7 +1850,7 @@
 				);
 				OTHER_LDFLAGS = (
 					"-headerpad_max_install_names",
-					"-F/opt/local/libexec/qt5-mac/lib",
+					"-F/opt/local/libexec/qt5/lib",
 				);
 				PRODUCT_NAME = GPSBabel;
 				QT_LIBRARY_SUFFIX = _debug;
