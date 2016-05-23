@@ -88,7 +88,6 @@
 		51418F017E34C42EA6422B7B /* gpx.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = F96FC2683C81903B6DCB72C9 /* gpx.cc */; settings = {ATTRIBUTES = (); }; };
 		5460AA96C1CD6AC25435FBF8 /* rgbcolors.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = D393478D329A72480CF519EA /* rgbcolors.cc */; settings = {ATTRIBUTES = (); }; };
 		5549425A613B05F384386B35 /* yahoo.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 8EC57628919393F3F3E95A3C /* yahoo.cc */; settings = {ATTRIBUTES = (); }; };
-		5564807B6620D872CAC01D5B /* delbin.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 069C5640A3003E7414C3C202 /* delbin.cc */; settings = {ATTRIBUTES = (); }; };
 		564114A2E9F66D64454C64A3 /* garmin_txt.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = C041F84866DE3A5F46E48BF8 /* garmin_txt.cc */; settings = {ATTRIBUTES = (); }; };
 		57E7A4BC71FA7AA63802D2B9 /* zutil.c in Compile Sources */ = {isa = PBXBuildFile; fileRef = 35019879D27E85B75662F92E /* zutil.c */; settings = {ATTRIBUTES = (); }; };
 		5900FC48BF249BACA4AB1EFD /* igc.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5DC9259204F291973B559A0E /* igc.cc */; settings = {ATTRIBUTES = (); }; };
@@ -107,11 +106,13 @@
 		6BFCF06E2F601E75E0BD16CA /* gpsdevice.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 1614A87D702BDB9A154D575F /* gpsdevice.cc */; settings = {ATTRIBUTES = (); }; };
 		6D678188E8F63E38AF71BA9A /* gpsusbread.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 438C122048F1C4A74E865C99 /* gpsusbread.cc */; settings = {ATTRIBUTES = (); }; };
 		6E1B68D0E42EFB945B37044B /* gzclose.c in Compile Sources */ = {isa = PBXBuildFile; fileRef = 9DD796BE10A702709DE6CF8B /* gzclose.c */; settings = {ATTRIBUTES = (); }; };
-		6E3B3DDB1BABBA3500AF8E0B /* usasciicodec.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDA1BABBA3500AF8E0B /* usasciicodec.cc */; settings = {ASSET_TAGS = (); }; };
-		6E3B3DE01BABBB8B00AF8E0B /* energympro.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDC1BABBB8A00AF8E0B /* energympro.cc */; settings = {ASSET_TAGS = (); }; };
-		6E3B3DE11BABBB8B00AF8E0B /* f90g_track.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDD1BABBB8B00AF8E0B /* f90g_track.cc */; settings = {ASSET_TAGS = (); }; };
-		6E3B3DE21BABBB8B00AF8E0B /* mapfactor.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDE1BABBB8B00AF8E0B /* mapfactor.cc */; settings = {ASSET_TAGS = (); }; };
-		6E3B3DE31BABBB8B00AF8E0B /* mynav.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDF1BABBB8B00AF8E0B /* mynav.cc */; settings = {ASSET_TAGS = (); }; };
+		6E3B3DDB1BABBA3500AF8E0B /* usasciicodec.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDA1BABBA3500AF8E0B /* usasciicodec.cc */; };
+		6E3B3DE01BABBB8B00AF8E0B /* energympro.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDC1BABBB8A00AF8E0B /* energympro.cc */; };
+		6E3B3DE11BABBB8B00AF8E0B /* f90g_track.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDD1BABBB8B00AF8E0B /* f90g_track.cc */; };
+		6E3B3DE21BABBB8B00AF8E0B /* mapfactor.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDE1BABBB8B00AF8E0B /* mapfactor.cc */; };
+		6E3B3DE31BABBB8B00AF8E0B /* mynav.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDF1BABBB8B00AF8E0B /* mynav.cc */; };
+		6E6482481CF2DA3D00B8DD37 /* ggv_bin.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E6482401CF2DA3D00B8DD37 /* ggv_bin.cc */; };
+		6E6482491CF2DA3D00B8DD37 /* globalsat_sport.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E6482411CF2DA3D00B8DD37 /* globalsat_sport.cc */; };
 		705E753C27E6D832BD6FF749 /* easygps.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = C597D8F76B8F191C12B4AD98 /* easygps.cc */; settings = {ATTRIBUTES = (); }; };
 		7071E8FEDD8E1B1E924A0B0B /* inflate.c in Compile Sources */ = {isa = PBXBuildFile; fileRef = 90EF8487AE26796AD4BCFE49 /* inflate.c */; settings = {ATTRIBUTES = (); }; };
 		71FDACCED7D9D782B5E77ECE /* brauniger_iq.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 59F0C1E637ECCEFB0C7C489A /* brauniger_iq.cc */; settings = {ATTRIBUTES = (); }; };
@@ -198,7 +199,6 @@
 		D2FB0131B5EB1E0523942E36 /* pcx.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = CE1DA24C52606089E3CA7347 /* pcx.cc */; settings = {ATTRIBUTES = (); }; };
 		D5024BF67C4BE07DCF97991E /* stackfilter.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5F1BE32D40757A67D1C6E3F5 /* stackfilter.cc */; settings = {ATTRIBUTES = (); }; };
 		D67A229D48F4EBB61DDAFF0C /* v900.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4C6B863D15102CC6E9E9A3C5 /* v900.cc */; settings = {ATTRIBUTES = (); }; };
-		D7DBA8491D616D51B5F6B04D /* google.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5C50AC40F8B204C70EFE5939 /* google.cc */; settings = {ATTRIBUTES = (); }; };
 		D820D4CB972482E3BB146C2F /* adler32.c in Compile Sources */ = {isa = PBXBuildFile; fileRef = 43F9BA4B59FD88E896CFBC2A /* adler32.c */; settings = {ATTRIBUTES = (); }; };
 		D9F7B0D4A2DE2CFD4A3A6935 /* gdb.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 784E06A868414179607BE69E /* gdb.cc */; settings = {ATTRIBUTES = (); }; };
 		DAFF463E4FB010E7815372D1 /* vidaone.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 4D466ABFF9BD45DFE6467402 /* vidaone.cc */; settings = {ATTRIBUTES = (); }; };
@@ -254,7 +254,6 @@
 		05817A32EFF6DCB2E3095719 /* inffast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = inffast.h; path = zlib/inffast.h; sourceTree = "<absolute>"; };
 		0624A5CCA9623C3079C36EAC /* qt_lib_macextras.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_macextras.pri; path = ../../Qt5.2.1/5.2.1/clang_64/mkspecs/modules/qt_lib_macextras.pri; sourceTree = "<absolute>"; };
 		0651458CA410E9E20B94B4FA /* pocketfms_bc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pocketfms_bc.cc; sourceTree = "<absolute>"; };
-		069C5640A3003E7414C3C202 /* delbin.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = delbin.cc; sourceTree = "<absolute>"; };
 		06F5C78CAFA396D310A9E7A2 /* qt_lib_testlib.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_testlib.pri; path = ../../Qt5.2.1/5.2.1/clang_64/mkspecs/modules/qt_lib_testlib.pri; sourceTree = "<absolute>"; };
 		074DFC06F127C84047E92DFF /* latin_greek_1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = latin_greek_1.h; path = cet/latin_greek_1.h; sourceTree = "<absolute>"; };
 		076D201BDFF08831F6121621 /* garmin_tables.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = garmin_tables.cc; sourceTree = "<absolute>"; };
@@ -394,7 +393,6 @@
 		5AED85D2707E7F3F4B10E6D1 /* compegps.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = compegps.cc; sourceTree = "<absolute>"; };
 		5BDD1743508DDAC088E167F4 /* inflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = inflate.h; path = zlib/inflate.h; sourceTree = "<absolute>"; };
 		5C0A08DF630840A6C5A9FE11 /* jis_x0201.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jis_x0201.h; path = cet/jis_x0201.h; sourceTree = "<absolute>"; };
-		5C50AC40F8B204C70EFE5939 /* google.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = google.cc; sourceTree = "<absolute>"; };
 		5C7B06C99E994A5FBBDD1AAD /* gpsread.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gpsread.cc; path = jeeps/gpsread.cc; sourceTree = "<absolute>"; };
 		5C87A85632844BE1F5ED62C9 /* itracku.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = itracku.cc; sourceTree = "<absolute>"; };
 		5CBA913F944D290A1078D5A4 /* trackfilter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trackfilter.cc; sourceTree = "<absolute>"; };
@@ -430,6 +428,8 @@
 		6E3B3DDE1BABBB8B00AF8E0B /* mapfactor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapfactor.cc; sourceTree = SOURCE_ROOT; };
 		6E3B3DDF1BABBB8B00AF8E0B /* mynav.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mynav.cc; sourceTree = SOURCE_ROOT; };
 		6E41063A82B6499582C268D8 /* explorist_ini.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = explorist_ini.h; sourceTree = "<absolute>"; };
+		6E6482401CF2DA3D00B8DD37 /* ggv_bin.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ggv_bin.cc; sourceTree = SOURCE_ROOT; };
+		6E6482411CF2DA3D00B8DD37 /* globalsat_sport.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globalsat_sport.cc; sourceTree = SOURCE_ROOT; };
 		6E761A97D842D70E6B05E6C7 /* es.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = es.h; path = cet/es.h; sourceTree = "<absolute>"; };
 		6FDD796981CFA4F253C28095 /* gpsmath.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gpsmath.cc; path = jeeps/gpsmath.cc; sourceTree = "<absolute>"; };
 		706E24A92EC3331FA9452B41 /* cet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cet.h; sourceTree = "<absolute>"; };
@@ -834,6 +834,8 @@
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6E6482401CF2DA3D00B8DD37 /* ggv_bin.cc */,
+				6E6482411CF2DA3D00B8DD37 /* globalsat_sport.cc */,
 				60ED8779C2E567CABD5772BE /* alan.cc */,
 				EF7912420E29D775A0FEA4F8 /* an1.cc */,
 				988A7109C0915DCB0322D87E /* an1sym.h */,
@@ -854,7 +856,6 @@
 				DF7B174E834FE06F73015778 /* csv_util.cc */,
 				95C907C8F9FA5573D15E8157 /* csv_util.h */,
 				D7D1038F7A971A294D4964AB /* defs.h */,
-				069C5640A3003E7414C3C202 /* delbin.cc */,
 				728351C028CB866BF7E658C1 /* delgpl.cc */,
 				3C3F664CD39F3DE6CD28CD4D /* destinator.cc */,
 				A48C2523D33629342449D72F /* dg-100.cc */,
@@ -900,7 +901,6 @@
 				C3B6BBE8BAF262C4B9ADF471 /* globals.cc */,
 				F0D21CCB23229E91D341C05C /* glogbook.cc */,
 				DC734378B4D566EF6DB5207A /* gnav_trl.cc */,
-				5C50AC40F8B204C70EFE5939 /* google.cc */,
 				96E621B9E6D899BD85384D4C /* googledir.cc */,
 				DFDA6BD62752F70AB6E8B9CC /* gopal.cc */,
 				11B64C661B8FD3A144B7A13A /* gpssim.cc */,
@@ -1489,6 +1489,7 @@
 				504B3FBF53CD94ADE4531EFB /* delgpl.cc in Compile Sources */,
 				B3438420BD40463A76DE6E58 /* ozi.cc in Compile Sources */,
 				E3D07EF056050EDAC8355BEF /* text.cc in Compile Sources */,
+				6E6482491CF2DA3D00B8DD37 /* globalsat_sport.cc in Compile Sources */,
 				FC7236768B8CAA2AD70B6F85 /* html.cc in Compile Sources */,
 				4DA1C8D51417C48290F99A3B /* netstumbler.cc in Compile Sources */,
 				5900FC48BF249BACA4AB1EFD /* igc.cc in Compile Sources */,
@@ -1497,7 +1498,6 @@
 				840CF58B32ED1026574F8C47 /* hiketech.cc in Compile Sources */,
 				41E7141F600DAC79E331CA95 /* glogbook.cc in Compile Sources */,
 				E0BE7FEF1EDC599D451863CF /* vcf.cc in Compile Sources */,
-				D7DBA8491D616D51B5F6B04D /* google.cc in Compile Sources */,
 				B4EC5F766681D5A928723B86 /* xhtmlent.cc in Compile Sources */,
 				343C21215B69B6BDD30ED5C7 /* lowranceusr.cc in Compile Sources */,
 				4564C5307F4E7CCA19368389 /* an1.cc in Compile Sources */,
@@ -1552,7 +1552,6 @@
 				17D4A6D12DC1B01AF26CB31D /* itracku.cc in Compile Sources */,
 				6E3B3DE01BABBB8B00AF8E0B /* energympro.cc in Compile Sources */,
 				D67A229D48F4EBB61DDAFF0C /* v900.cc in Compile Sources */,
-				5564807B6620D872CAC01D5B /* delbin.cc in Compile Sources */,
 				00132A2E2117A5D2949D24C1 /* pocketfms_bc.cc in Compile Sources */,
 				9B36955786EBBE1B36994928 /* pocketfms_fp.cc in Compile Sources */,
 				DB131408468294E5265B983D /* pocketfms_wp.cc in Compile Sources */,
@@ -1646,6 +1645,7 @@
 				6BFCF06E2F601E75E0BD16CA /* gpsdevice.cc in Compile Sources */,
 				1744603E0519CCB4C78909F9 /* gpsdevice_ser.cc in Compile Sources */,
 				A04D8133BEC6EC2323B31B5B /* gpsdevice_usb.cc in Compile Sources */,
+				6E6482481CF2DA3D00B8DD37 /* ggv_bin.cc in Compile Sources */,
 				E9AC0AA10ABBAD0A036147C1 /* gpsrqst.cc in Compile Sources */,
 				6E3B3DE31BABBB8B00AF8E0B /* mynav.cc in Compile Sources */,
 				A3B2915AE45D27236A90C94C /* gpssend.cc in Compile Sources */,
@@ -1687,8 +1687,8 @@
 				DYLIB_CURRENT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"/opt/local/libexec/qt5/lib",
-					"/opt/local/libexec/qt5/lib",
+					/opt/local/libexec/qt5/lib,
+					/opt/local/libexec/qt5/lib,
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1701,14 +1701,14 @@
 				HEADER_SEARCH_PATHS = (
 					jeeps,
 					mac/libusb,
-					"/opt/local/libexex/qt5/lib/QtCore.framework/Versions/5/Headers",
+					/opt/local/libexex/qt5/lib/QtCore.framework/Versions/5/Headers,
 					.,
 					"/opt/local/libexec/qt5/mkspecs/macx-clang",
 				);
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
 				LIBRARY_SEARCH_PATHS = (
 					/System/Library/Frameworks/,
-					"/opt/local/libexec/qt5/lib/",
+					/opt/local/libexec/qt5/lib/,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
@@ -1780,8 +1780,8 @@
 				DYLIB_CURRENT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"/opt/local/libexec/qt5/lib",
-					"/opt/local/libexec/qt5/lib",
+					/opt/local/libexec/qt5/lib,
+					/opt/local/libexec/qt5/lib,
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1795,14 +1795,14 @@
 				HEADER_SEARCH_PATHS = (
 					jeeps,
 					mac/libusb,
-					"/opt/local/libexex/qt5/lib/QtCore.framework/Versions/5/Headers",
+					/opt/local/libexex/qt5/lib/QtCore.framework/Versions/5/Headers,
 					.,
 					"/opt/local/libexec/qt5/mkspecs/macx-clang",
 				);
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
 				LIBRARY_SEARCH_PATHS = (
 					/System/Library/Frameworks/,
-					"/opt/local/libexec/qt5/lib/",
+					/opt/local/libexec/qt5/lib/,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
