@@ -107,6 +107,11 @@
 		6BFCF06E2F601E75E0BD16CA /* gpsdevice.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 1614A87D702BDB9A154D575F /* gpsdevice.cc */; settings = {ATTRIBUTES = (); }; };
 		6D678188E8F63E38AF71BA9A /* gpsusbread.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 438C122048F1C4A74E865C99 /* gpsusbread.cc */; settings = {ATTRIBUTES = (); }; };
 		6E1B68D0E42EFB945B37044B /* gzclose.c in Compile Sources */ = {isa = PBXBuildFile; fileRef = 9DD796BE10A702709DE6CF8B /* gzclose.c */; settings = {ATTRIBUTES = (); }; };
+		6E3B3DDB1BABBA3500AF8E0B /* usasciicodec.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDA1BABBA3500AF8E0B /* usasciicodec.cc */; settings = {ASSET_TAGS = (); }; };
+		6E3B3DE01BABBB8B00AF8E0B /* energympro.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDC1BABBB8A00AF8E0B /* energympro.cc */; settings = {ASSET_TAGS = (); }; };
+		6E3B3DE11BABBB8B00AF8E0B /* f90g_track.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDD1BABBB8B00AF8E0B /* f90g_track.cc */; settings = {ASSET_TAGS = (); }; };
+		6E3B3DE21BABBB8B00AF8E0B /* mapfactor.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDE1BABBB8B00AF8E0B /* mapfactor.cc */; settings = {ASSET_TAGS = (); }; };
+		6E3B3DE31BABBB8B00AF8E0B /* mynav.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 6E3B3DDF1BABBB8B00AF8E0B /* mynav.cc */; settings = {ASSET_TAGS = (); }; };
 		705E753C27E6D832BD6FF749 /* easygps.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = C597D8F76B8F191C12B4AD98 /* easygps.cc */; settings = {ATTRIBUTES = (); }; };
 		7071E8FEDD8E1B1E924A0B0B /* inflate.c in Compile Sources */ = {isa = PBXBuildFile; fileRef = 90EF8487AE26796AD4BCFE49 /* inflate.c */; settings = {ATTRIBUTES = (); }; };
 		71FDACCED7D9D782B5E77ECE /* brauniger_iq.cc in Compile Sources */ = {isa = PBXBuildFile; fileRef = 59F0C1E637ECCEFB0C7C489A /* brauniger_iq.cc */; settings = {ATTRIBUTES = (); }; };
@@ -321,7 +326,6 @@
 		2EFFD59380BDC687C9FE0E2E /* shapefil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shapefil.h; path = shapelib/shapefil.h; sourceTree = "<absolute>"; };
 		2F48A3A98BA6A8B7E277DF63 /* qt_lib_webkit_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_webkit_private.pri; path = ../../Qt5.2.1/5.2.1/clang_64/mkspecs/modules/qt_lib_webkit_private.pri; sourceTree = "<absolute>"; };
 		30A6EAD14E2A7ADAFD244E66 /* jgpsutil.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = jgpsutil.cc; path = jeeps/jgpsutil.cc; sourceTree = "<absolute>"; };
-		30AD3BDA8F0983F60FF4C197 /* uuid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uuid.h; sourceTree = "<absolute>"; };
 		30F63E9AB1442541CF7261D3 /* qt_lib_bootstrap_private.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_bootstrap_private.pri; path = ../../Qt5.2.1/5.2.1/clang_64/mkspecs/modules/qt_lib_bootstrap_private.pri; sourceTree = "<absolute>"; };
 		32B5D023B46642C6CCA49544 /* magellan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magellan.h; sourceTree = "<absolute>"; };
 		335A647E71162789E6AAABEE /* cet_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cet_util.cc; sourceTree = "<absolute>"; };
@@ -420,6 +424,11 @@
 		6CC1D6899F618A8BB3FC097C /* xmlgeneric.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xmlgeneric.cc; sourceTree = "<absolute>"; };
 		6D3F8BAFC1E3359FB76C7C06 /* gpsusbint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gpsusbint.h; path = jeeps/gpsusbint.h; sourceTree = "<absolute>"; };
 		6E1BBC9393ACD0F8DB04365F /* garmin_xt.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = garmin_xt.cc; sourceTree = "<absolute>"; };
+		6E3B3DDA1BABBA3500AF8E0B /* usasciicodec.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = usasciicodec.cc; path = src/core/usasciicodec.cc; sourceTree = SOURCE_ROOT; };
+		6E3B3DDC1BABBB8A00AF8E0B /* energympro.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = energympro.cc; sourceTree = SOURCE_ROOT; };
+		6E3B3DDD1BABBB8B00AF8E0B /* f90g_track.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = f90g_track.cc; sourceTree = SOURCE_ROOT; };
+		6E3B3DDE1BABBB8B00AF8E0B /* mapfactor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapfactor.cc; sourceTree = SOURCE_ROOT; };
+		6E3B3DDF1BABBB8B00AF8E0B /* mynav.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mynav.cc; sourceTree = SOURCE_ROOT; };
 		6E41063A82B6499582C268D8 /* explorist_ini.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = explorist_ini.h; sourceTree = "<absolute>"; };
 		6E761A97D842D70E6B05E6C7 /* es.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = es.h; path = cet/es.h; sourceTree = "<absolute>"; };
 		6FDD796981CFA4F253C28095 /* gpsmath.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gpsmath.cc; path = jeeps/gpsmath.cc; sourceTree = "<absolute>"; };
@@ -446,7 +455,6 @@
 		7AAB07C2D5C27FCF59E09428 /* gtm.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gtm.cc; sourceTree = "<absolute>"; };
 		7AEC5DDF49B79EFE7E4256E7 /* deflate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = deflate.c; path = zlib/deflate.c; sourceTree = "<absolute>"; };
 		7AFA58D3B9EC7E3E5A606EAF /* qt_lib_sql.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_sql.pri; path = ../../Qt5.2.1/5.2.1/clang_64/mkspecs/modules/qt_lib_sql.pri; sourceTree = "<absolute>"; };
-		7BADDA67E5296B5A4D8A422F /* pdbfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pdbfile.h; sourceTree = "<absolute>"; };
 		7DAA8406B05B6249D0206A23 /* zlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = zlib/zlib.h; sourceTree = "<absolute>"; };
 		7DAC69FC48F1779106026008 /* iso_5427.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iso_5427.h; path = cet/iso_5427.h; sourceTree = "<absolute>"; };
 		7DC3A615E626A625F7A3C020 /* qt_lib_network.pri */ = {isa = PBXFileReference; lastKnownFileType = file; name = qt_lib_network.pri; path = ../../Qt5.2.1/5.2.1/clang_64/mkspecs/modules/qt_lib_network.pri; sourceTree = "<absolute>"; };
@@ -826,200 +834,203 @@
 		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8EB86755D7197AB1673D4B4D /* gbser_posix.cc */,
-				5AF61CE04FC3E5728FB4CE68 /* mac */,
-				78633242EC81E52255C26B0B /* magproto.cc */,
-				0087A696E951709AE03C162A /* explorist_ini.cc */,
-				F96FC2683C81903B6DCB72C9 /* gpx.cc */,
-				AB7332B53F1724B76A68E12F /* geo.cc */,
-				1D9E1FD131EDCA4FA13EF768 /* mapsend.cc */,
-				F21BB8019963E9C78491FEF6 /* mapsource.cc */,
-				EFD435D35DCB32917731FBE6 /* garmin.cc */,
-				CA6A08EDD24CE32AB6273838 /* garmin_device_xml.cc */,
-				076D201BDFF08831F6121621 /* garmin_tables.cc */,
-				C35E76061956DD8CED6B46BC /* internal_styles.cc */,
-				BCFBDD179AFFEAF3DCD950E8 /* nmea.cc */,
-				6CB7C861BBBA3A049830939C /* kml.cc */,
-				A2D67CE8AAF9F0091A1ABB8E /* wbt-200.cc */,
-				7AAB07C2D5C27FCF59E09428 /* gtm.cc */,
-				D07193CA94ADEB1307B0E6C6 /* gpsutil.cc */,
-				CE1DA24C52606089E3CA7347 /* pcx.cc */,
-				1AB5E4A4386953AE85A70957 /* skytraq.cc */,
-				1DB3DA0C8C5D30E820AEA519 /* holux.cc */,
-				3ABCB24FF1506AD8119BB42A /* tmpro.cc */,
-				010F98573A7BB5CE1F39D041 /* tpg.cc */,
-				9A2F026605AD0EFB4C7E78AF /* tpo.cc */,
-				27F98C7BFB62A11A517E8A0D /* xcsv.cc */,
-				D08CD082F95B61D506A2F829 /* tiger.cc */,
-				C597D8F76B8F191C12B4AD98 /* easygps.cc */,
-				ED0F01C3D8AEA4274A3ACE25 /* saroute.cc */,
-				AF5C70F38FE37E25BA89BD2C /* navicache.cc */,
-				173E6C061A62B7A81A52F77C /* psitrex.cc */,
-				728351C028CB866BF7E658C1 /* delgpl.cc */,
-				F83A268020FF401070B931D4 /* ozi.cc */,
-				991C0FC00CDC24A39BB0DFEC /* text.cc */,
-				4941BF82337C6C1E41AD7CFD /* html.cc */,
-				253CD778C6ADDA02C8568BE9 /* netstumbler.cc */,
-				5DC9259204F291973B559A0E /* igc.cc */,
-				59F0C1E637ECCEFB0C7C489A /* brauniger_iq.cc */,
-				72F1B3AA6E5C07DEA7CACC36 /* shape.cc */,
-				F2619446CF90523DCEA186C4 /* hiketech.cc */,
-				F0D21CCB23229E91D341C05C /* glogbook.cc */,
-				9D3FDB58B56653F4548206CE /* vcf.cc */,
-				5C50AC40F8B204C70EFE5939 /* google.cc */,
-				57ABC2AD51FA15597AD2654D /* xhtmlent.cc */,
-				69F027FA9DCC3B652AE17650 /* lowranceusr.cc */,
-				EF7912420E29D775A0FEA4F8 /* an1.cc */,
-				E8E2435ED88B051AE6C8B166 /* tomtom.cc */,
-				D7DEFE3BFAE203BB76846079 /* tef_xml.cc */,
-				288FA831E0AF8447799FC537 /* maggeo.cc */,
-				0AA7F58D6F18AB233162FE65 /* vitosmt.cc */,
-				784E06A868414179607BE69E /* gdb.cc */,
-				C99E7C8612913B8859C5274A /* bcr.cc */,
-				124810C4E8297C1D83590EDC /* ignrando.cc */,
-				36B03533DB535E0F1C984CBE /* stmwpp.cc */,
-				2E6CB899ABC641131765B713 /* cst.cc */,
-				7EE014B00379E9E5DE6B822F /* nmn4.cc */,
-				5AED85D2707E7F3F4B10E6D1 /* compegps.cc */,
-				8EC57628919393F3F3E95A3C /* yahoo.cc */,
-				DB8CCE39C41E81028BBEAD9E /* unicsv.cc */,
-				3719193D1185FD89B5D319A6 /* wfff_xml.cc */,
-				C041F84866DE3A5F46E48BF8 /* garmin_txt.cc */,
-				11B64C661B8FD3A144B7A13A /* gpssim.cc */,
-				70DAA4A212B9051F8E5A13EC /* stmsdf.cc */,
-				EBA833A7FA20DA8E3CD6DD28 /* gtrnctr.cc */,
-				2BDFD34C116D2040736CCEF5 /* dmtlog.cc */,
-				27A9D1017BA7D193592C7083 /* raymarine.cc */,
 				60ED8779C2E567CABD5772BE /* alan.cc */,
-				D27765E1061D8963E90DED9E /* vitovtt.cc */,
-				A8C268AF24B9D57AD4DC8AC3 /* ggv_log.cc */,
-				F6DA2C9A1708C286D18105B4 /* g7towin.cc */,
-				454F130338242D872BC1968E /* garmin_gpi.cc */,
-				BE51BF0B439330F82B883512 /* lmx.cc */,
-				CDF5521B019C332DD7D9E79B /* random.cc */,
-				E19F15F07E839FA18ADA9C49 /* xol.cc */,
-				A48C2523D33629342449D72F /* dg-100.cc */,
-				AB2E81EFB3A04845448D38EA /* navilink.cc */,
-				9F643FFCD4D394AE7CC243D6 /* mtk_logger.cc */,
-				BF29268AF36956A1432E7D08 /* ik3d.cc */,
-				931280D416620DD8CE863267 /* osm.cc */,
-				3C3F664CD39F3DE6CD28CD4D /* destinator.cc */,
-				0362D514C3BACC474D3B72D2 /* exif.cc */,
-				4D466ABFF9BD45DFE6467402 /* vidaone.cc */,
-				EF7887AAC775E044230F38A2 /* igo8.cc */,
-				DFDA6BD62752F70AB6E8B9CC /* gopal.cc */,
-				A1B4AD222D24446693AFC9D7 /* humminbird.cc */,
-				231DE25EB5826C5445F27280 /* mapasia.cc */,
-				DC734378B4D566EF6DB5207A /* gnav_trl.cc */,
-				5F898F472F7B475D7A44604D /* navitel.cc */,
-				90F6247FF53386FD063EBE4E /* ggv_ovl.cc */,
-				80B7A8FC9BC9BF47EBDE5143 /* jtr.cc */,
-				F87177B44D8DE390784A8B04 /* sbp.cc */,
-				675A950399FF212BB12FD266 /* sbn.cc */,
-				A5B2C7C8F765BA778777636A /* mmo.cc */,
-				F747F9C16DC860D3A9B5C99B /* skyforce.cc */,
-				5C87A85632844BE1F5ED62C9 /* itracku.cc */,
-				4C6B863D15102CC6E9E9A3C5 /* v900.cc */,
+				EF7912420E29D775A0FEA4F8 /* an1.cc */,
+				988A7109C0915DCB0322D87E /* an1sym.h */,
+				4A66EC287D14F5B48B049158 /* arcdist.cc */,
+				C99E7C8612913B8859C5274A /* bcr.cc */,
+				D0407CC01B79C6CE1D372CF9 /* bend.cc */,
+				59F0C1E637ECCEFB0C7C489A /* brauniger_iq.cc */,
+				1E98E5ACF88530DF68348545 /* bushnell_trl.cc */,
+				D23F97BC9EA63BC27AE2B0D2 /* bushnell.cc */,
+				3AA4B27908870C60BBF42BFF /* cet */,
+				335A647E71162789E6AAABEE /* cet_util.cc */,
+				2B8E9E67B344BA364CD96B15 /* cet_util.h */,
+				924BD64AA604957AD9306079 /* cet.cc */,
+				706E24A92EC3331FA9452B41 /* cet.h */,
+				5AED85D2707E7F3F4B10E6D1 /* compegps.cc */,
+				03461DB87A24C8A99F7E61A9 /* config.h */,
+				2E6CB899ABC641131765B713 /* cst.cc */,
+				DF7B174E834FE06F73015778 /* csv_util.cc */,
+				95C907C8F9FA5573D15E8157 /* csv_util.h */,
+				D7D1038F7A971A294D4964AB /* defs.h */,
 				069C5640A3003E7414C3C202 /* delbin.cc */,
+				728351C028CB866BF7E658C1 /* delgpl.cc */,
+				3C3F664CD39F3DE6CD28CD4D /* destinator.cc */,
+				A48C2523D33629342449D72F /* dg-100.cc */,
+				843A93802308B52AEEEE5D49 /* discard.cc */,
+				2BDFD34C116D2040736CCEF5 /* dmtlog.cc */,
+				BBDDF98C0F1CC4B40AB5C77D /* duplicate.cc */,
+				C597D8F76B8F191C12B4AD98 /* easygps.cc */,
+				6E3B3DDC1BABBB8A00AF8E0B /* energympro.cc */,
+				02D9D445B9D03025C7B35DA7 /* enigma.cc */,
+				0362D514C3BACC474D3B72D2 /* exif.cc */,
+				0087A696E951709AE03C162A /* explorist_ini.cc */,
+				6E41063A82B6499582C268D8 /* explorist_ini.h */,
+				6E3B3DDD1BABBB8B00AF8E0B /* f90g_track.cc */,
+				2D80B1EFC87258C420888B51 /* fatal.cc */,
+				D2B32BB71D325BCE4FEFB82D /* filter_vecs.cc */,
+				AF484C190D559F744954C6A1 /* filterdefs.h */,
+				D1A218B305E86A0C618B6B74 /* formspec.cc */,
+				F6DA2C9A1708C286D18105B4 /* g7towin.cc */,
+				CA6A08EDD24CE32AB6273838 /* garmin_device_xml.cc */,
+				39AC48965EE59016FA84EB13 /* garmin_device_xml.h */,
+				84C1C5B18C02EABBC7029810 /* garmin_fit.cc */,
+				772C154E2EE35E94F0BD1BB0 /* garmin_fs.cc */,
+				385EBB40F8C9DF1AC9D92757 /* garmin_fs.h */,
+				454F130338242D872BC1968E /* garmin_gpi.cc */,
+				891D92EF8AA4A61B70C78B8F /* garmin_gpi.h */,
+				076D201BDFF08831F6121621 /* garmin_tables.cc */,
+				CE4BFF521716F57F85685B83 /* garmin_tables.h */,
+				C041F84866DE3A5F46E48BF8 /* garmin_txt.cc */,
+				6E1BBC9393ACD0F8DB04365F /* garmin_xt.cc */,
+				EFD435D35DCB32917731FBE6 /* garmin.cc */,
+				3892F8AF7E2966D87D6D86C9 /* gbfile.cc */,
+				3DA6F2EF2D193AB17B32F061 /* gbfile.h */,
+				8EB86755D7197AB1673D4B4D /* gbser_posix.cc */,
+				69D6F55E9A47DEB5568AD724 /* gbser_private.h */,
+				989EF67AA2B11776C2FC129E /* gbser.cc */,
+				F99350ADD20271C765358FF2 /* gbser.h */,
+				C29830B2BF06A5EF5700A915 /* gbsleep.cc */,
+				9E3DAF9C09E840B084870D5E /* gbversion.h */,
+				784E06A868414179607BE69E /* gdb.cc */,
+				AB7332B53F1724B76A68E12F /* geo.cc */,
+				A8C268AF24B9D57AD4DC8AC3 /* ggv_log.cc */,
+				90F6247FF53386FD063EBE4E /* ggv_ovl.cc */,
+				C3B6BBE8BAF262C4B9ADF471 /* globals.cc */,
+				F0D21CCB23229E91D341C05C /* glogbook.cc */,
+				DC734378B4D566EF6DB5207A /* gnav_trl.cc */,
+				5C50AC40F8B204C70EFE5939 /* google.cc */,
+				96E621B9E6D899BD85384D4C /* googledir.cc */,
+				DFDA6BD62752F70AB6E8B9CC /* gopal.cc */,
+				11B64C661B8FD3A144B7A13A /* gpssim.cc */,
+				D07193CA94ADEB1307B0E6C6 /* gpsutil.cc */,
+				F96FC2683C81903B6DCB72C9 /* gpx.cc */,
+				A4416DCF43A78619A31DAB67 /* grtcirc.cc */,
+				ABA14E230D8D6110CD6651E6 /* grtcirc.h */,
+				7AAB07C2D5C27FCF59E09428 /* gtm.cc */,
+				EBA833A7FA20DA8E3CD6DD28 /* gtrnctr.cc */,
+				D39A2D56D3030F0F1137EE34 /* height.cc */,
+				BF56EFC67E0AF04799C7F6CA /* height.h */,
+				F2619446CF90523DCEA186C4 /* hiketech.cc */,
+				1DB3DA0C8C5D30E820AEA519 /* holux.cc */,
+				BE94D1D2A69A2E091BBD18BB /* holux.h */,
+				4941BF82337C6C1E41AD7CFD /* html.cc */,
+				A1B4AD222D24446693AFC9D7 /* humminbird.cc */,
+				5DC9259204F291973B559A0E /* igc.cc */,
+				124810C4E8297C1D83590EDC /* ignrando.cc */,
+				EF7887AAC775E044230F38A2 /* igo8.cc */,
+				BF29268AF36956A1432E7D08 /* ik3d.cc */,
+				B5B3A2F6B20DC4489E13AA8D /* inifile.cc */,
+				B42DAE0443E40DDC88570D30 /* inifile.h */,
+				C35E76061956DD8CED6B46BC /* internal_styles.cc */,
+				EF2C6AC4EF226A91521A8FA2 /* interpolate.cc */,
+				5C87A85632844BE1F5ED62C9 /* itracku.cc */,
+				6438147E0B104D443B95028E /* jeeps */,
+				DA8458CEA37C8E1FA2B352B7 /* jogmap.cc */,
+				80B7A8FC9BC9BF47EBDE5143 /* jtr.cc */,
+				6CB7C861BBBA3A049830939C /* kml.cc */,
+				BE51BF0B439330F82B883512 /* lmx.cc */,
+				69F027FA9DCC3B652AE17650 /* lowranceusr.cc */,
+				8087C6D3AADECC4A9896B29F /* lowranceusr4.cc */,
+				5AF61CE04FC3E5728FB4CE68 /* mac */,
+				32B5D023B46642C6CCA49544 /* magellan.h */,
+				288FA831E0AF8447799FC537 /* maggeo.cc */,
+				78633242EC81E52255C26B0B /* magproto.cc */,
+				A2EBA7FC67AFFD0911B220B6 /* main.cc */,
+				231DE25EB5826C5445F27280 /* mapasia.cc */,
+				982BCA060C4984355C180A7E /* mapbar_track.cc */,
+				6E3B3DDE1BABBB8B00AF8E0B /* mapfactor.cc */,
+				1D9E1FD131EDCA4FA13EF768 /* mapsend.cc */,
+				D80756093E494CDEACF8061D /* mapsend.h */,
+				F21BB8019963E9C78491FEF6 /* mapsource.cc */,
+				7DD1338C6E4594FB354ECCF1 /* mkshort.cc */,
+				A5B2C7C8F765BA778777636A /* mmo.cc */,
+				46D4BD8182A7548BA57AA8B7 /* msvc */,
+				E4F26604EFD6F22EAFA161FD /* mtk_locus.cc */,
+				9F643FFCD4D394AE7CC243D6 /* mtk_logger.cc */,
+				6E3B3DDF1BABBB8B00AF8E0B /* mynav.cc */,
+				AF5C70F38FE37E25BA89BD2C /* navicache.cc */,
+				592CB5D15F31EEC8DA5B4B09 /* naviguide.cc */,
+				AB2E81EFB3A04845448D38EA /* navilink.cc */,
+				B24ED47E58C74BDF0B3FF3C9 /* navilink.h */,
+				5F898F472F7B475D7A44604D /* navitel.cc */,
+				253CD778C6ADDA02C8568BE9 /* netstumbler.cc */,
+				BCFBDD179AFFEAF3DCD950E8 /* nmea.cc */,
+				7EE014B00379E9E5DE6B822F /* nmn4.cc */,
+				4DB22869D110D98A0BFE91DE /* nukedata.cc */,
+				931280D416620DD8CE863267 /* osm.cc */,
+				F83A268020FF401070B931D4 /* ozi.cc */,
+				B372FC9384853E078AE9269D /* parse.cc */,
+				CE1DA24C52606089E3CA7347 /* pcx.cc */,
 				0651458CA410E9E20B94B4FA /* pocketfms_bc.cc */,
 				FCED3C24C02785ECB2EEA075 /* pocketfms_fp.cc */,
 				8313EA26EDEA2105E99CA7B1 /* pocketfms_wp.cc */,
-				592CB5D15F31EEC8DA5B4B09 /* naviguide.cc */,
-				02D9D445B9D03025C7B35DA7 /* enigma.cc */,
-				7AA6E364AF1FB69E9FD0A7DB /* vpl.cc */,
-				E2DB7324703280E55123E43F /* teletype.cc */,
-				DA8458CEA37C8E1FA2B352B7 /* jogmap.cc */,
-				D23F97BC9EA63BC27AE2B0D2 /* bushnell.cc */,
-				1E98E5ACF88530DF68348545 /* bushnell_trl.cc */,
-				AD9B169743BA909DB5230F53 /* wintec_tes.cc */,
-				CD27560E4ACADA19F0ADB856 /* subrip.cc */,
-				6E1BBC9393ACD0F8DB04365F /* garmin_xt.cc */,
-				84C1C5B18C02EABBC7029810 /* garmin_fit.cc */,
-				8087C6D3AADECC4A9896B29F /* lowranceusr4.cc */,
-				E4F26604EFD6F22EAFA161FD /* mtk_locus.cc */,
-				96E621B9E6D899BD85384D4C /* googledir.cc */,
-				982BCA060C4984355C180A7E /* mapbar_track.cc */,
-				5A2FD2EA92BB0EE51CE5ADEC /* position.cc */,
-				FF2C35C1B7BD3C59EB7461C1 /* radius.cc */,
-				BBDDF98C0F1CC4B40AB5C77D /* duplicate.cc */,
-				4A66EC287D14F5B48B049158 /* arcdist.cc */,
 				E1271157867BA56140AF7F7E /* polygon.cc */,
-				EA9762DFBC96E4F5111131EC /* smplrout.cc */,
-				751F37CB9317891C64F038AC /* reverse_route.cc */,
-				1E03FE2E81FA51DC78DC54E7 /* sort.cc */,
-				5F1BE32D40757A67D1C6E3F5 /* stackfilter.cc */,
-				5CBA913F944D290A1078D5A4 /* trackfilter.cc */,
-				843A93802308B52AEEEE5D49 /* discard.cc */,
-				4DB22869D110D98A0BFE91DE /* nukedata.cc */,
-				EF2C6AC4EF226A91521A8FA2 /* interpolate.cc */,
-				92245C57EA99CBE85FFD9759 /* transform.cc */,
-				D39A2D56D3030F0F1137EE34 /* height.cc */,
-				71DB454958580621AAE74D31 /* swapdata.cc */,
-				D0407CC01B79C6CE1D372CF9 /* bend.cc */,
-				510340523EBDCC0350960526 /* validate.cc */,
+				5A2FD2EA92BB0EE51CE5ADEC /* position.cc */,
+				173E6C061A62B7A81A52F77C /* psitrex.cc */,
 				165DE978B9BBA40B33DF8EBD /* queue.cc */,
-				BA69268070A7275673A1D20B /* route.cc */,
-				35C4B6DA1F1A68182C661FB1 /* waypt.cc */,
-				D2B32BB71D325BCE4FEFB82D /* filter_vecs.cc */,
-				E46FA41F5FC3DD6EFA2EE38A /* util.cc */,
-				4179A1A1D57283E9B4004332 /* vecs.cc */,
-				7DD1338C6E4594FB354ECCF1 /* mkshort.cc */,
-				DF7B174E834FE06F73015778 /* csv_util.cc */,
-				AC298414F3EB5096EB52EAAD /* strptime.c */,
-				A4416DCF43A78619A31DAB67 /* grtcirc.cc */,
-				18F2BE505F97AED9285DEFA8 /* util_crc.cc */,
-				6CC1D6899F618A8BB3FC097C /* xmlgeneric.cc */,
-				D1A218B305E86A0C618B6B74 /* formspec.cc */,
-				175639FE22BDAC4BF877F382 /* xmltag.cc */,
-				924BD64AA604957AD9306079 /* cet.cc */,
-				335A647E71162789E6AAABEE /* cet_util.cc */,
-				2D80B1EFC87258C420888B51 /* fatal.cc */,
-				D393478D329A72480CF519EA /* rgbcolors.cc */,
-				B5B3A2F6B20DC4489E13AA8D /* inifile.cc */,
-				772C154E2EE35E94F0BD1BB0 /* garmin_fs.cc */,
-				C29830B2BF06A5EF5700A915 /* gbsleep.cc */,
-				D404F7E121C59FF373986E4C /* units.cc */,
-				989EF67AA2B11776C2FC129E /* gbser.cc */,
-				3892F8AF7E2966D87D6D86C9 /* gbfile.cc */,
-				B372FC9384853E078AE9269D /* parse.cc */,
-				117B0F8F3911F4618C3D893E /* session.cc */,
-				A2EBA7FC67AFFD0911B220B6 /* main.cc */,
-				C3B6BBE8BAF262C4B9ADF471 /* globals.cc */,
-				921315FAA7F261D737F4F4C7 /* src */,
-				0F31A571D7ED8C2CACD41364 /* shapelib */,
-				944AAB2A67F3462B34674BF8 /* zlib */,
-				6438147E0B104D443B95028E /* jeeps */,
-				988A7109C0915DCB0322D87E /* an1sym.h */,
-				706E24A92EC3331FA9452B41 /* cet.h */,
-				3AA4B27908870C60BBF42BFF /* cet */,
-				2B8E9E67B344BA364CD96B15 /* cet_util.h */,
-				03461DB87A24C8A99F7E61A9 /* config.h */,
-				95C907C8F9FA5573D15E8157 /* csv_util.h */,
-				D7D1038F7A971A294D4964AB /* defs.h */,
-				6E41063A82B6499582C268D8 /* explorist_ini.h */,
-				AF484C190D559F744954C6A1 /* filterdefs.h */,
-				39AC48965EE59016FA84EB13 /* garmin_device_xml.h */,
-				385EBB40F8C9DF1AC9D92757 /* garmin_fs.h */,
-				891D92EF8AA4A61B70C78B8F /* garmin_gpi.h */,
-				CE4BFF521716F57F85685B83 /* garmin_tables.h */,
-				3DA6F2EF2D193AB17B32F061 /* gbfile.h */,
-				F99350ADD20271C765358FF2 /* gbser.h */,
-				69D6F55E9A47DEB5568AD724 /* gbser_private.h */,
-				9E3DAF9C09E840B084870D5E /* gbversion.h */,
-				ABA14E230D8D6110CD6651E6 /* grtcirc.h */,
-				BF56EFC67E0AF04799C7F6CA /* height.h */,
-				BE94D1D2A69A2E091BBD18BB /* holux.h */,
-				B42DAE0443E40DDC88570D30 /* inifile.h */,
-				32B5D023B46642C6CCA49544 /* magellan.h */,
-				D80756093E494CDEACF8061D /* mapsend.h */,
-				46D4BD8182A7548BA57AA8B7 /* msvc */,
-				B24ED47E58C74BDF0B3FF3C9 /* navilink.h */,
-				7BADDA67E5296B5A4D8A422F /* pdbfile.h */,
 				E060321D4F85BBF83C8BC9E7 /* queue.h */,
+				FF2C35C1B7BD3C59EB7461C1 /* radius.cc */,
+				CDF5521B019C332DD7D9E79B /* random.cc */,
+				27A9D1017BA7D193592C7083 /* raymarine.cc */,
+				751F37CB9317891C64F038AC /* reverse_route.cc */,
+				D393478D329A72480CF519EA /* rgbcolors.cc */,
+				BA69268070A7275673A1D20B /* route.cc */,
+				ED0F01C3D8AEA4274A3ACE25 /* saroute.cc */,
+				675A950399FF212BB12FD266 /* sbn.cc */,
+				F87177B44D8DE390784A8B04 /* sbp.cc */,
+				117B0F8F3911F4618C3D893E /* session.cc */,
 				CFB181CC540DA086DE94BF77 /* session.h */,
+				72F1B3AA6E5C07DEA7CACC36 /* shape.cc */,
+				0F31A571D7ED8C2CACD41364 /* shapelib */,
+				F747F9C16DC860D3A9B5C99B /* skyforce.cc */,
+				1AB5E4A4386953AE85A70957 /* skytraq.cc */,
+				EA9762DFBC96E4F5111131EC /* smplrout.cc */,
+				1E03FE2E81FA51DC78DC54E7 /* sort.cc */,
+				921315FAA7F261D737F4F4C7 /* src */,
+				5F1BE32D40757A67D1C6E3F5 /* stackfilter.cc */,
+				70DAA4A212B9051F8E5A13EC /* stmsdf.cc */,
+				36B03533DB535E0F1C984CBE /* stmwpp.cc */,
+				AC298414F3EB5096EB52EAAD /* strptime.c */,
 				A4B8ABEA943631F46F2FEC65 /* strptime.h */,
-				30AD3BDA8F0983F60FF4C197 /* uuid.h */,
+				CD27560E4ACADA19F0ADB856 /* subrip.cc */,
+				71DB454958580621AAE74D31 /* swapdata.cc */,
+				D7DEFE3BFAE203BB76846079 /* tef_xml.cc */,
+				E2DB7324703280E55123E43F /* teletype.cc */,
+				991C0FC00CDC24A39BB0DFEC /* text.cc */,
+				D08CD082F95B61D506A2F829 /* tiger.cc */,
+				3ABCB24FF1506AD8119BB42A /* tmpro.cc */,
+				E8E2435ED88B051AE6C8B166 /* tomtom.cc */,
+				010F98573A7BB5CE1F39D041 /* tpg.cc */,
+				9A2F026605AD0EFB4C7E78AF /* tpo.cc */,
+				5CBA913F944D290A1078D5A4 /* trackfilter.cc */,
+				92245C57EA99CBE85FFD9759 /* transform.cc */,
+				DB8CCE39C41E81028BBEAD9E /* unicsv.cc */,
+				D404F7E121C59FF373986E4C /* units.cc */,
+				6E3B3DDA1BABBA3500AF8E0B /* usasciicodec.cc */,
+				18F2BE505F97AED9285DEFA8 /* util_crc.cc */,
+				E46FA41F5FC3DD6EFA2EE38A /* util.cc */,
+				4C6B863D15102CC6E9E9A3C5 /* v900.cc */,
+				510340523EBDCC0350960526 /* validate.cc */,
+				9D3FDB58B56653F4548206CE /* vcf.cc */,
+				4179A1A1D57283E9B4004332 /* vecs.cc */,
+				4D466ABFF9BD45DFE6467402 /* vidaone.cc */,
+				0AA7F58D6F18AB233162FE65 /* vitosmt.cc */,
+				D27765E1061D8963E90DED9E /* vitovtt.cc */,
+				7AA6E364AF1FB69E9FD0A7DB /* vpl.cc */,
+				35C4B6DA1F1A68182C661FB1 /* waypt.cc */,
+				A2D67CE8AAF9F0091A1ABB8E /* wbt-200.cc */,
+				3719193D1185FD89B5D319A6 /* wfff_xml.cc */,
+				AD9B169743BA909DB5230F53 /* wintec_tes.cc */,
+				27F98C7BFB62A11A517E8A0D /* xcsv.cc */,
+				57ABC2AD51FA15597AD2654D /* xhtmlent.cc */,
+				6CC1D6899F618A8BB3FC097C /* xmlgeneric.cc */,
 				789AE2BDC92C0271399A12B1 /* xmlgeneric.h */,
+				175639FE22BDAC4BF877F382 /* xmltag.cc */,
+				E19F15F07E839FA18ADA9C49 /* xol.cc */,
+				8EC57628919393F3F3E95A3C /* yahoo.cc */,
+				944AAB2A67F3462B34674BF8 /* zlib */,
 			);
 			name = Sources;
 			sourceTree = "<Group>";
@@ -1423,7 +1434,7 @@
 			name = "Qt Qmake";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/robertlipe/src/gpsbabel -f GPSBabel.xcodeproj/qt_makeqmake.mak";
+			shellScript = "make -C /tools/gpsbabel/gpsbabel -f GPSBabel.xcodeproj/qt_makeqmake.mak";
 		};
 		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1433,7 +1444,7 @@
 			name = "Qt Preprocessors";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/robertlipe/src/gpsbabel -f GPSBabel.xcodeproj/qt_preprocess.mak";
+			shellScript = "make -C /tools/gpsbabel/gpsbabel -f GPSBabel.xcodeproj/qt_preprocess.mak";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1455,6 +1466,7 @@
 				124BA380AAEE1F3675A79C8D /* mapsource.cc in Compile Sources */,
 				5A85366A69433314FF38CB47 /* garmin.cc in Compile Sources */,
 				92DAA29372E15F58507E6BF8 /* garmin_device_xml.cc in Compile Sources */,
+				6E3B3DDB1BABBA3500AF8E0B /* usasciicodec.cc in Compile Sources */,
 				607436F11C551E338B29D733 /* garmin_tables.cc in Compile Sources */,
 				43FC5828D8865E242BCF5A99 /* internal_styles.cc in Compile Sources */,
 				B4C20BC8A292E7F19EFEF5B9 /* nmea.cc in Compile Sources */,
@@ -1538,6 +1550,7 @@
 				9D60F3623FA7BC891898BC6D /* mmo.cc in Compile Sources */,
 				3DCF66B42F6FC750D0F4F4AD /* skyforce.cc in Compile Sources */,
 				17D4A6D12DC1B01AF26CB31D /* itracku.cc in Compile Sources */,
+				6E3B3DE01BABBB8B00AF8E0B /* energympro.cc in Compile Sources */,
 				D67A229D48F4EBB61DDAFF0C /* v900.cc in Compile Sources */,
 				5564807B6620D872CAC01D5B /* delbin.cc in Compile Sources */,
 				00132A2E2117A5D2949D24C1 /* pocketfms_bc.cc in Compile Sources */,
@@ -1577,6 +1590,7 @@
 				A7DCB406E468BDA81D51DACF /* bend.cc in Compile Sources */,
 				FEB987D1B1330E4E3AD57BD9 /* validate.cc in Compile Sources */,
 				7C2E07EDDD73441B85064E25 /* queue.cc in Compile Sources */,
+				6E3B3DE21BABBB8B00AF8E0B /* mapfactor.cc in Compile Sources */,
 				63148122CD295A00B34E8361 /* route.cc in Compile Sources */,
 				8909918613102810C1C92F4E /* waypt.cc in Compile Sources */,
 				FB66C56358AD610819DAA408 /* filter_vecs.cc in Compile Sources */,
@@ -1633,11 +1647,13 @@
 				1744603E0519CCB4C78909F9 /* gpsdevice_ser.cc in Compile Sources */,
 				A04D8133BEC6EC2323B31B5B /* gpsdevice_usb.cc in Compile Sources */,
 				E9AC0AA10ABBAD0A036147C1 /* gpsrqst.cc in Compile Sources */,
+				6E3B3DE31BABBB8B00AF8E0B /* mynav.cc in Compile Sources */,
 				A3B2915AE45D27236A90C94C /* gpssend.cc in Compile Sources */,
 				8DB5DF5926E54BE8F7E84CEC /* gpsserial.cc in Compile Sources */,
 				A9A7AC1FC4DEDB40BD24AEA2 /* jgpsutil.cc in Compile Sources */,
 				6D678188E8F63E38AF71BA9A /* gpsusbread.cc in Compile Sources */,
 				50255ECC33691EFA92536675 /* gpsusbsend.cc in Compile Sources */,
+				6E3B3DE11BABBB8B00AF8E0B /* f90g_track.cc in Compile Sources */,
 				D224F50FE60EF43AD5064FCB /* gpsusbcommon.cc in Compile Sources */,
 				19E4F984FF38B4ED82345D09 /* gpslibusb.cc in Compile Sources */,
 			);
@@ -1671,8 +1687,8 @@
 				DYLIB_CURRENT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib,
-					/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib,
+					"/opt/local/libexec/qt5-mac/lib",
+					"/opt/local/libexec/qt5-mac/lib",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1685,14 +1701,14 @@
 				HEADER_SEARCH_PATHS = (
 					jeeps,
 					mac/libusb,
-					../../Qt5.2.1/5.2.1/clang_64/lib/QtCore.framework/Versions/5/Headers,
+					"/opt/local/libexex/qt5-mac/lib/QtCore.framework/Versions/5/Headers",
 					.,
-					"../../Qt5.2.1/5.2.1/clang_64/mkspecs/macx-clang",
+					"/opt/local/libexec/qt5-mac/mkspecs/macx-clang",
 				);
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
 				LIBRARY_SEARCH_PATHS = (
 					/System/Library/Frameworks/,
-					/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib,
+					"/opt/local/libexec/qt5-mac/lib/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
@@ -1739,12 +1755,12 @@
 				);
 				OTHER_LDFLAGS = (
 					"-headerpad_max_install_names",
-					"-F/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib",
+					"-F/opt/local/libexec/qt5-mac/lib",
 				);
 				PRODUCT_NAME = GPSBabel;
 				QT_LIBRARY_SUFFIX = "";
 				SDKROOT = macosx;
-				SYMROOT = /Users/robertlipe/src/gpsbabel;
+				SYMROOT = /tools/gpsbabel;
 			};
 			name = Release;
 		};
@@ -1764,8 +1780,8 @@
 				DYLIB_CURRENT_VERSION = 1.0.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib,
-					/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib,
+					"/opt/local/libexec/qt5-mac/lib",
+					"/opt/local/libexec/qt5-mac/lib",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1779,14 +1795,14 @@
 				HEADER_SEARCH_PATHS = (
 					jeeps,
 					mac/libusb,
-					../../Qt5.2.1/5.2.1/clang_64/lib/QtCore.framework/Versions/5/Headers,
+					"/opt/local/libexex/qt5-mac/lib/QtCore.framework/Versions/5/Headers",
 					.,
-					"../../Qt5.2.1/5.2.1/clang_64/mkspecs/macx-clang",
+					"/opt/local/libexec/qt5-mac/mkspecs/macx-clang",
 				);
 				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
 				LIBRARY_SEARCH_PATHS = (
 					/System/Library/Frameworks/,
-					/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib,
+					"/opt/local/libexec/qt5-mac/lib/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1834,12 +1850,12 @@
 				);
 				OTHER_LDFLAGS = (
 					"-headerpad_max_install_names",
-					"-F/Users/robertlipe/Qt5.2.1/5.2.1/clang_64/lib",
+					"-F/opt/local/libexec/qt5-mac/lib",
 				);
 				PRODUCT_NAME = GPSBabel;
 				QT_LIBRARY_SUFFIX = _debug;
 				SDKROOT = macosx;
-				SYMROOT = /Users/robertlipe/src/gpsbabel;
+				SYMROOT = /tools/gpsbabel;
 			};
 			name = Debug;
 		};

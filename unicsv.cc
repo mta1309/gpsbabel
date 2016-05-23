@@ -69,6 +69,7 @@ typedef enum {
   fld_utc_time,
   fld_course,
   fld_speed,
+  fld_speed_knots,
   fld_temperature,
   fld_temperature_f,
   fld_heartrate,
@@ -81,6 +82,7 @@ typedef enum {
   fld_time,
   fld_datetime,
   fld_iso_time,
+  fld_time_t,
   fld_year,
   fld_month,
   fld_day,
@@ -188,7 +190,9 @@ static field_t fields_def[] = {
   { "utc_t",	fld_utc_time, STR_ANY },
   { "head",	fld_course, STR_ANY },
   { "cour",	fld_course, STR_ANY },
+  { "cog",	fld_course, STR_ANY },
   { "speed",	fld_speed, STR_ANY },
+  { "sog",	fld_speed_knots, STR_ANY },
   { "velo",	fld_speed, STR_ANY },
   { "geschw",	fld_speed, STR_ANY },		/* speed in german */
   { "tempf",	fld_temperature_f, STR_EQUAL },	/* degrees fahrenheit */
@@ -198,6 +202,7 @@ static field_t fields_def[] = {
   { "power",	fld_power, STR_ANY },
   { "prox",	fld_proximity, STR_ANY },
   { "depth",	fld_depth, STR_ANY },
+  { "dpth",	fld_depth, STR_ANY },
   { "date",	fld_date, STR_ANY },
   { "datum",	fld_date, STR_ANY },
   { "time",	fld_time, STR_ANY },
@@ -257,9 +262,15 @@ static char* opt_filename;
 static char* opt_format;
 static char* opt_prec;
 static char* opt_fields;
+static char* opt_adjust_after;
+static char* opt_adjust_until;
+static char* opt_adjust_amount;
 static int unicsv_waypt_ct;
 static char unicsv_detect;
 static int llprec;
+static int adjust_after = 0;
+static int adjust_until = 0;
+static int adjust_amount = 0;
 
 static arglist_t unicsv_args[] = {
   {
@@ -289,6 +300,18 @@ static arglist_t unicsv_args[] = {
   {
     "fields",  &opt_fields,  "Name and order of input fields, separated by '+'",
     NULL, ARGTYPE_STRING, ARG_NOMINMAX
+  },
+  {
+    "adjust_after", &opt_adjust_after, "Start time adjust after this time is seen",
+    "0", ARGTYPE_INT, ARG_NOMINMAX
+  },
+  {
+    "adjust_until", &opt_adjust_until, "Adjust time until this time is seen",
+    "0", ARGTYPE_INT, ARG_NOMINMAX
+  },
+  {
+    "adjust_amount", &opt_adjust_amount, "Adjust time by this much",
+    "0", ARGTYPE_INT, ARG_NOMINMAX
   },
   ARG_TERMINATOR
 };
@@ -616,6 +639,10 @@ unicsv_rd_init(const QString& fname)
   if (fin->unicode) {
     cet_convert_init(CET_CHARSET_UTF8, 1);
   }
+  
+  adjust_after = atoi(opt_adjust_after);
+  adjust_until = atoi(opt_adjust_until);
+  adjust_amount = atoi(opt_adjust_amount);
 }
 
 static void
@@ -656,6 +683,7 @@ unicsv_parse_one_line(char* ibuf)
   wpt->latitude = unicsv_unknown;
   wpt->longitude = unicsv_unknown;
   memset(&ymd, 0, sizeof(ymd));
+  static int time_adjust = 0;
 
   column = -1;
   QString s;
@@ -680,6 +708,19 @@ unicsv_parse_one_line(char* ibuf)
       if (s.contains('T')) {
         unicsv_fields_tab[column] = fld_iso_time;
       }
+      /* See if it is an integer and assume time_t if so */
+      {
+        bool ok;
+        int t;
+        t = s.toInt(&ok);
+        if (ok) {
+          unicsv_fields_tab[column] = fld_time_t;
+          /* See if we're already in the adjustment interval */
+          if (adjust_amount != 0 && t >= adjust_after && t <= adjust_until) {
+            time_adjust = adjust_amount;
+          }
+        }
+      }  
       break;
     default:
       ;
@@ -846,7 +887,11 @@ unicsv_parse_one_line(char* ibuf)
       break;
 
     case fld_speed:
+    case fld_speed_knots:
       if (parse_speed(s, &d, 1.0, MYNAME)) {
+        if (unicsv_fields_tab[column] == fld_speed_knots) {
+          d = KNOTS_TO_MPS(d);
+        }  
         WAYPT_SET(wpt, speed, d);
         if (unicsv_detect) {
           unicsv_data_type = trkdata;
@@ -915,6 +960,39 @@ unicsv_parse_one_line(char* ibuf)
     case fld_iso_time:
       is_localtime = 2;	/* fix result */
       wpt->SetCreationTime(xml_parse_time(s));
+      break;
+      
+    case fld_time_t:
+      {
+        int new_t;
+        is_localtime = 2; /* fix result */
+        new_t = s.toInt() + time_adjust;
+        wpt->SetCreationTime(new_t, 0);
+#if 0
+        {
+          static int old_t = 0;
+          if (old_t != 0) {
+            if (new_t - old_t < 0 || new_t - old_t > 30) {
+              QDateTime old_dt = QDateTime::fromTime_t(old_t).toUTC();
+              QDateTime new_dt = QDateTime::fromTime_t(s.toInt()).toUTC();
+              warning(MYNAME ": Time skip of %d from %d (%s) to %s (%s).\n", 
+                      new_t - old_t, 
+                      old_t, old_dt.toString("MMM-dd hh:mm:ss").toLatin1().data(),
+                      qPrintable(s), new_dt.toString("MMM-dd hh:mm:ss").toLatin1().data());
+            }
+          }
+          old_t = new_t;
+        }
+#endif
+      if (adjust_amount != 0) {
+        if (time_adjust == 0 && new_t == adjust_after) {
+          time_adjust = adjust_amount;
+          }
+        else if (time_adjust != 0 && new_t - time_adjust == adjust_until) {
+          time_adjust = 0;
+          }
+        }
+      }  
       break;
 
     case fld_time:
