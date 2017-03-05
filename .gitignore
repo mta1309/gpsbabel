@@ -26,3 +26,6 @@
 /autogen/
 /makedoc
 /empty
+
+.qmake.stash
+**/qt_*.mak
