@@ -265,12 +265,14 @@ static char* opt_fields;
 static char* opt_adjust_after;
 static char* opt_adjust_until;
 static char* opt_adjust_amount;
+static char* opt_max_skip;
 static int unicsv_waypt_ct;
 static char unicsv_detect;
 static int llprec;
 static int adjust_after = 0;
 static int adjust_until = 0;
 static int adjust_amount = 0;
+static int max_skip = 0;
 
 static arglist_t unicsv_args[] = {
   {
@@ -312,6 +314,10 @@ static arglist_t unicsv_args[] = {
   {
     "adjust_amount", &opt_adjust_amount, "Adjust time by this much",
     "0", ARGTYPE_INT, ARG_NOMINMAX
+  },
+  {
+    "max_skip", &opt_max_skip, "Message for gaps in input times greater than this",
+    NULL, ARGTYPE_INT, "0", "999999"
   },
   ARG_TERMINATOR
 };
@@ -643,6 +649,7 @@ unicsv_rd_init(const QString& fname)
   adjust_after = atoi(opt_adjust_after);
   adjust_until = atoi(opt_adjust_until);
   adjust_amount = atoi(opt_adjust_amount);
+  max_skip = atoi(opt_max_skip);
 }
 
 static void
@@ -968,11 +975,10 @@ unicsv_parse_one_line(char* ibuf)
         is_localtime = 2; /* fix result */
         new_t = s.toInt() + time_adjust;
         wpt->SetCreationTime(new_t, 0);
-#if 0
-        {
+        if (max_skip > 0) {
           static int old_t = 0;
           if (old_t != 0) {
-            if (new_t - old_t < 0 || new_t - old_t > 30) {
+            if (new_t - old_t < 0 || new_t - old_t > max_skip) {
               QDateTime old_dt = QDateTime::fromTime_t(old_t).toUTC();
               QDateTime new_dt = QDateTime::fromTime_t(s.toInt()).toUTC();
               warning(MYNAME ": Time skip of %d from %d (%s) to %s (%s).\n", 
@@ -983,7 +989,6 @@ unicsv_parse_one_line(char* ibuf)
           }
           old_t = new_t;
         }
-#endif
       if (adjust_amount != 0) {
         if (time_adjust == 0 && new_t == adjust_after) {
           time_adjust = adjust_amount;
