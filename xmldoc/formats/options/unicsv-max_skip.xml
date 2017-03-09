@@ -1,0 +1,7 @@
+<para>
+This option causes a message to be issued if there is a large enough
+time gap between two consecutive input records, or if the time goes 
+backwards by any amount.  If the value is zero, no messages are issued.
+Also, this test is only made if the input records contain times as Unix time stamps.
+The value is specified as an integer in seconds.
+</para>

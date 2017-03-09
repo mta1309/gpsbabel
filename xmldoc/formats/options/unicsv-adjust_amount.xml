@@ -1,0 +1,4 @@
+<para>
+This option gives the amount by which time stamps are to be
+adjusted.  It is a signed integer in seconds.
+</para>

@@ -1,0 +1,5 @@
+<para>
+This specifies the time stamp of the record preceeding 
+the first one to be adjusted.  It is given as an integer Unix
+time stamp.
+</para>

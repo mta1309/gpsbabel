@@ -20,13 +20,15 @@
       bng_n =    British National Grid's northing
       bng_z =    British National Grid's zone
       caden =    Cadence
+      cog =      Heading / Course true
       comment =  Notes
       cont =     <link linkend="style_def_geocontainer">Geocache container</link>
       cour =     Heading / Course true
-      date =     Date (yyyy/mm/dd)
+      date =     Date (yyyy/mm/dd or a Unix time stamp if an integer)
       depth =    Depth (in meters).  Add "ft" or "feet" for feet.
       desc =     Description
       diff =     <link linkend="style_def_geodiff">Geocache difficulty</link>
+      dpth =     Depth (in meters).  Add "ft" or "feet" for feet.
       ele =      Elevation (in meters) of the point. Add "ft" or "feet" for feet.
       e/w =      'e' for eastern hemisphere, 'w' for western
       exported = Geocache export date 
@@ -51,12 +53,13 @@
       power =    Cycling power (in Watts)
       prox =     Proximity (in meters).  Add "ft" or "feet" for feet.
       sat =      Number of sats used for fix
+      sog =      Speed in knots.
       speed =    Speed, in meters per second. (See below)
       symb =     Symbol (icon) name
       tempf =    Temperature (degrees Fahrenheit)
       temp =     Temperature (degrees Celsius)
       terr =     <link linkend="style_def_geoterr">Geocache terrain</link>
-      time =     Time (hh:mm:ss[.msec])
+      time =     Time (hh:mm:ss[.msec] or a Unix time stamp if an integer)
       type =     <link linkend="style_def_geotype">Geocache cache type</link>
       url =      URL
       utc_d =    UTC date
@@ -103,7 +106,33 @@
      GC1A37,36.090683,-86.679550,The Troll by a182pilot &amp; Family
    </screen>
 </para>
-	
+
+<para>
+The <option>adjust_after</option>, <option>adjust_until</option>, and
+<option>adjust_amount</option> options allow adjustment 
+of times in input files (they have no effect when writing a file).  
+The times are adjusted by an 
+amount given by the <option>adjust_amount</option> option.  The first input
+line that is adjusted is the one following one that has a time equal to
+the value of the <option>adjust_after</option> option.  The last one adjusted
+is the next one that has a time equal to the value of the 
+<option>adjust_until</option> option.  
+</para>
+
+<para>
+Each of these options has an integer
+value.  <option>adjust_amount</option> is specified in seconds.  
+<option>adjust_after</option> and <option>adjust_until</option> are specified
+as integer Unix time stamps. Times are only adjusted if they are specified
+as Unix time stamps in the input records.
+</para>
+<para>
+For example you could specify 
+<programlisting>
+adjust_after=1440033685,adjust_until=1441162827,adjust_amount=3604
+</programlisting>
+</para>
+
 <para>
    On the output side unicsv writes fixed number of columns (waypoint index, latitude and longitude)
    followed by a variable column list depending on internal data.
