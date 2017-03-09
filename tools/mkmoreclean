@@ -1,15 +1,15 @@
 #!/bin/sh
 
 #
-# delete all files listed in .cvsignore
+# delete all files listed in .gitignore
 #
 
 find . -type d | 
 while read dirname; do
-	test -s "$dirname/.cvsignore" || continue
+	test -s "$dirname/.gitignore" || continue
 	while read filemask; do
 		test -z "$filemask" && continue
 		cmd="rm -Rfv $dirname/$filemask"
 		${cmd}
-	done < "$dirname/.cvsignore"
+	done < "$dirname/.gitignore"
 done
